@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Partagez vos idées et suggestions avec le Collège K2.">
+  <title>Vos idées — Collège K2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <a class="brand" href="index.html#accueil" aria-label="Collège K2, accueil">
+      <span class="brand-mark">K<span>2</span></span>
+      <span class="brand-name">COLLÈGE<br>K2</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Ouvrir le menu">
+      <span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-navigation" aria-label="Navigation principale">
+      <a href="index.html#college">Le collège</a>
+      <a href="index.html#parcours">Les parcours</a>
+      <a href="actualites.html">Actualités</a>
+      <a href="index.html#vie-scolaire">Vie scolaire</a>
+      <a href="vos-idees.html" aria-current="page">Vos idées</a>
+      <a class="nav-contact" href="index.html#contact">Nous contacter <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="contenu">
+    <section class="ideas ideas-page" aria-labelledby="ideas-title">
+      <div class="section-wrap">
+        <div class="section-kicker"><span>05</span><span>La parole est à vous</span></div>
+        <div class="ideas-main">
+          <div class="ideas-copy">
+            <h1 id="ideas-title">Une idée ?<br><em>On vous écoute.</em></h1>
+            <p>Partagez vos idées avec la communauté du collège et réagissez aux propositions avec un pouce bleu ou rouge.</p>
+          </div>
+          <form class="ideas-form" id="ideas-form">
+            <label for="idea-name">Votre prénom <span>(facultatif)</span></label>
+            <input id="idea-name" name="name" type="text" autocomplete="given-name" maxlength="80" placeholder="Comment vous appeler ?">
+
+            <label for="idea-message">Votre publication</label>
+            <textarea id="idea-message" name="message" rows="5" maxlength="1000" required placeholder="Partagez votre idée avec le collège..."></textarea>
+
+            <button class="button button-light ideas-submit" type="submit">Publier mon idée <span aria-hidden="true">↗</span></button>
+            <p class="ideas-note" id="ideas-status" role="status" aria-live="polite">Les publications et les votes sont enregistrés uniquement dans ce navigateur. Ils ne sont pas visibles par les autres visiteurs.</p>
+          </form>
+        </div>
+        <section class="ideas-feed" aria-labelledby="ideas-feed-title">
+          <div class="ideas-feed-heading">
+            <h2 id="ideas-feed-title">Le fil des idées</h2>
+            <span id="ideas-count">0 publication</span>
+          </div>
+          <p class="ideas-empty" id="ideas-empty">Pas encore d’idée publiée ici. À vous de lancer la conversation !</p>
+          <div class="ideas-posts" id="ideas-posts" aria-live="polite"></div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html#accueil" aria-label="Collège K2, retour à l’accueil">
+      <span class="brand-mark">K<span>2</span></span>
+      <span class="brand-name">COLLÈGE<br>K2</span>
+    </a>
+    <span class="footer-tagline">Apprendre. Grandir. S'ouvrir.</span>
+    <span class="copyright">© <span id="current-year"></span> Collège K2</span>
+  </footer>
+</body>
+</html>
