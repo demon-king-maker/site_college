@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Actualités du Collège K2 : projets, événements et moments forts de la vie scolaire.">
+  <title>Actualités — Collège K2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header">
+    <a class="brand" href="index.html#accueil" aria-label="Collège K2, accueil">
+      <span class="brand-mark">K<span>2</span></span>
+      <span class="brand-name">COLLÈGE<br>K2</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Ouvrir le menu">
+      <span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-navigation" aria-label="Navigation principale">
+      <a href="index.html#college">Le collège</a>
+      <a href="index.html#parcours">Les parcours</a>
+      <a href="actualites.html" aria-current="page">Actualités</a>
+      <a href="index.html#vie-scolaire">Vie scolaire</a>
+      <a href="vos-idees.html">Vos idées</a>
+      <a class="nav-contact" href="index.html#contact">Nous contacter <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="contenu">
+    <section class="news-page" aria-labelledby="actualites-title">
+      <div class="section-wrap">
+        <div class="section-kicker"><span>03</span><span>Les nouvelles de K2</span></div>
+        <div class="news-page-header">
+          <h1 id="actualites-title">Actualités <em>K2</em></h1>
+          <a class="button button-light" href="index.html#accueil">Retour à l'accueil <span aria-hidden="true">↩</span></a>
+        </div>
+
+        <div class="news-archive">
+          <article class="news-card featured">
+            <div class="news-meta">
+              <span class="news-category">Sport</span>
+              <time class="news-date" datetime="2026-02-14">14 février</time>
+            </div>
+            <h2>Cross du collège : courage, esprit d'équipe et bonne humeur</h2>
+            <p>Le cross est toujours un grand moment de solidarité au collège. Les élèves se motivent ensemble, courent avec envie et découvrent qu'on peut aller loin quand on avance à plusieurs.</p>
+          </article>
+
+          <article class="news-card">
+            <div class="news-meta">
+              <span class="news-category">Culture</span>
+              <time class="news-date" datetime="2026-03-27">27 mars</time>
+            </div>
+            <h2>Atelier théâtre et expression orale</h2>
+            <p>Au programme : improvisation, confiance en soi et créativité. Ce type d'atelier donne aux élèves le plaisir de s'exprimer, d'écouter et de prendre la parole avec plus d'assurance.</p>
+          </article>
+
+          <article class="news-card">
+            <div class="news-meta">
+              <span class="news-category">En classe</span>
+              <time class="news-date" datetime="2026-04-12">12 avril</time>
+            </div>
+            <h2>Projet science : découvrir, tester, comprendre</h2>
+            <p>Les élèves travaillent sur des expériences, des observations et des questions concrètes. L'objectif : faire naître la curiosité et montrer que la science, c'est aussi une aventure à vivre ensemble.</p>
+          </article>
+
+          <article class="news-card">
+            <div class="news-meta">
+              <span class="news-category">Vie scolaire</span>
+              <time class="news-date" datetime="2026-05-09">9 mai</time>
+            </div>
+            <h2>Les petits progrès, ça se fête aussi</h2>
+            <p>Un coup de main, une nouvelle idée, un exercice réussi : la vie du collège est faite de multiples petites victoires. On prend le temps de les remarquer et de les encourager.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html#accueil" aria-label="Collège K2, retour en haut">
+      <span class="brand-mark">K<span>2</span></span>
+      <span class="brand-name">COLLÈGE<br>K2</span>
+    </a>
+    <span class="footer-tagline">Apprendre. Grandir. S'ouvrir.</span>
+    <span class="copyright">© <span id="current-year"></span> Collège K2</span>
+  </footer>
+</body>
+</html>
